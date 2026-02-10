@@ -1,0 +1,16 @@
+benchmark.exe ^
+    --positive ../../../assets/images/lic_us_1280x720.jpg ^
+    --negative ../../../assets/images/london_traffic.jpg ^
+    --assets ../../../assets ^
+    --ienv_enabled false ^
+    --openvino_enabled true ^
+    --openvino_device CPU ^
+    --trt_enabled false ^
+    --klass_lpci_enabled false ^
+    --klass_vcr_enabled false ^
+    --klass_vmmr_enabled false ^
+    --klass_vbsr_enabled false ^
+    --charset latin ^
+    --loops 100 ^
+    --rate 0.2 ^
+    --parallel true
